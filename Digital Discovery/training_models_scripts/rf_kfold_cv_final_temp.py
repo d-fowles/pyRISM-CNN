@@ -527,7 +527,7 @@ for resample in range(1, no_resamples + 1):
     # Train the model:
     # ----------------
     # Fit the model:
-    rf.fit(X_train_cv, y_train_cv)
+    rf.fit(X_train_resample, y_train_resample)
 
     #Feature importance
     importances_resample = rf.feature_importances_
