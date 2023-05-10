@@ -465,7 +465,7 @@ for resample in range(1, no_resamples + 1):
     # Train the model:
     # ----------------
     # Fit the model:
-    pls.fit(X_train_cv, y_train_cv)
+    pls.fit(X_train_resample, y_train_resample)
         
     # Make predictions on train and test set using trained model:
     y_pred_train_resample = pls.predict(X_train_resample)
